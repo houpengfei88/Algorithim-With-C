@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
-project(LearnProjects)
+project(Algorithm-With-C)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(LearnProjects main.cpp SortTestHelper.h Sort.h SortHelper.h)
+add_executable(Algorithm main.cpp SortTestHelper.h Sort.h SortHelper.h)

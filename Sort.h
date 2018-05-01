@@ -15,7 +15,7 @@ void SelectionSort(T arr[], int n) {
     for (int i = 0; i < n; ++i) {
         minIndex = i;
         for (int j = i + 1; j < n; ++j) {
-            if (arr[i] > arr[j]) {
+            if (arr[j] < arr[minIndex]) {
                 minIndex = j;
             }
         }
@@ -56,7 +56,6 @@ void BubbleSort(T arr[], int n) {
 //基数排序只能用于整数排序
 template<typename T>
 void RadixSort(T arr[], int n) {
-    assert(T == int);
     int d = SortHelper::__maxbit(arr, n);
     T *tmp = new T[n];
     int *count = new int[10];
