@@ -18,7 +18,7 @@ namespace SortTestHelper {
         T *arr = new T[n];
         srand(time(0));
         for (int i = 0; i < n; ++i) {
-            arr[i] = rand() % (rangeR - rangeL + 1) + rangeL;
+            arr[i] = rand() % (int)(rangeR - rangeL + 1) + rangeL;
         }
         return arr;
     }

@@ -56,6 +56,7 @@ void BubbleSort(T arr[], int n) {
 //基数排序只能用于整数排序
 template<typename T>
 void RadixSort(T arr[], int n) {
+    static_assert(std::is_integral<T>::value);
     int d = SortHelper::__maxbit(arr, n);
     T *tmp = new T[n];
     int *count = new int[10];
