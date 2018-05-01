@@ -211,7 +211,6 @@ namespace SortHelper {
             k = j;
         }
         arr[k] = e;
-
     }
 }
 

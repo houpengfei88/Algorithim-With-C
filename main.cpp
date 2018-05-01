@@ -122,6 +122,5 @@ int main() {
     delete[] arr9;
     delete[] arr10;
 
-
     return 0;
 }
