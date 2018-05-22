@@ -3,9 +3,6 @@
 #include "Sort.h"
 
 int main() {
-    //当n = 100000时 冒泡排序去掉
-    //当n = 1000000时 选择排序和插入排序去掉
-    //当n = 10000000时 归并排序去掉 内存不够
     int n = 10000;
     int *arr = SortTestHelper::generateRandomArray(n, 0, n);
     int *arr1 = SortTestHelper::copyArray(arr, n);
@@ -96,7 +93,7 @@ int main() {
     arr9 = SortTestHelper::copyArray(arr, n);
     arr10 = SortTestHelper::copyArray(arr, n);
 
-    std::cout << "Test for Random Array , size = " << n << ", random range [0, " << n << "]" << std::endl;
+    std::cout << "Test for Random Array , size = " << n << ", random range [0, " << 10 << "]" << std::endl;
     SortTestHelper::testSort("Bubble Sort", BubbleSort, arr, n);
     SortTestHelper::testSort("Selection Sort", SelectionSort, arr1, n);
     SortTestHelper::testSort("Insertion Sort", InsertionSort, arr2, n);

@@ -89,8 +89,9 @@ template<typename T>
 void MergeSort(T arr[], int n) {
     //性能优化
     //如果将aux数组作为参数传递给__merge子过程，整个归并排序还会更快
-    T aux[n];
+    T *aux = new T[n];
     SortHelper::__mergeSort(arr, 0, n - 1, aux);
+    delete[] aux;
 }
 
 //自底向上的归并排序
